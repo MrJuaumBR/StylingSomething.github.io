@@ -181,6 +181,22 @@
     width: 24px;
     height: 24px;
 }
+/* Icons */
+.discord{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.discord.black::before{
+    
+    content: url(/data/images/resizing.js?url=&width=248&height=248);
+    width: 24px;
+    height: 24px;
+}
+.discord.legacy::before{
+    content: url();
+}
 
 /* Carousel */
 .carousel{

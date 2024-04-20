@@ -8,7 +8,7 @@
     <body class="gradient1">
         <div class="content">
             <h1>Styling </h1>
-            <div>
+            <div id="gradient-dashboard">
                 <div class="spaced">
                     <h2 id="gradient-dashboard">Gradient Dashboard</h2>
                     <div class="gradient1 rounded centered inline-block relative" style="width: 15em; height: 25em; left: 1em;">
@@ -80,7 +80,7 @@
             <br>
             <hr class="white" style="border-width: 8px; border-style: solid;">
             <br>
-            <div>
+            <div id="carousel-element">
                 <div class="spaced">
                     <h2 id="carousel">carousel</h2>
                     <div class="carousel">
@@ -97,52 +97,110 @@
                             <div class="item"></div>
                         </main>
                     </div>
-                </div>
-            </div>
-            <br>
-            <hr class="white" style="border-width: 8px; border-style: solid;">
-            <br>
-            <div>
-                <div class="spaced">
-                    <h2 id="gradients">Gradients</h2>
-                    <div class="grid" style="grid-template-columns: 100px 100px 100px 100px; grid-template-rows: 100px 100px 100px;align-items: center; justify-content: center;column-gap: 15px; row-gap: 15px;">
-                        <div class="gradient1 full">
-                            Gradient 1
-                        </div>
-                        <div class="gradient2 full">
-                            Gradient 2
-                        </div>
-                        <div class="gradient3 full">
-                            Gradient 3
-                        </div>
-                        <div class="gradient4 full">
-                            Gradient 4
-                        </div>
-                        <div class="gradient5 full">
-                            Gradient 5
-                        </div>
-                        <div class="gradient6 full">
-                            Gradient 6
-                        </div>
-                        <div class="gradient7 full">
-                            Gradient 7
-                        </div>
-                        <div class="gradient8 full">
-                            Gradient 8
-                        </div>
-                        <div class="gradient9 full">
-                            Gradient 9
-                        </div>
-                        <div class="gradient10 full">
-                            Gradient 10
-                        </div>
+                    <div class="black">
+                        the carrousel is a system a little bit complex than others.<br>
+                        you will need to create a div with the class "carousel"<br>
+                        then inside of this div, you will need to create a "main" element, and this element need to have id "carousel" and class "carousel-load"<br>
+                        then inside of "main" you will need to create 5 div with the class "item".<br>
+                        ↑ This steps above will create the items<br><br>
+                        ↓ this steps below will create the radio buttons<br>
+                        for create the radio buttons, inside of the div with the class "carousel",<br>
+                        you will need to create 5 input elements with the type "radio" and name "position"<br>
+                        and then, one of them need to be with the "checked" attribute.
+
                     </div>
                 </div>
             </div>
             <br>
             <hr class="white" style="border-width: 8px; border-style: solid;">
             <br>
-            <div>
+            <div id="gradients">
+                <div class="spaced">
+                    <h2 id="gradients">Gradients</h2>
+                    <div class="grid" style="grid-template-columns: 100px 100px 100px 100px; grid-template-rows: 100px 100px 100px;align-items: center; justify-content: center;column-gap: 15px; row-gap: 15px;">
+                        <div class="gradient1 full">
+                            Gradient 1
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient1</span>
+                            </div>
+                        </div>
+                        <div class="gradient2 full">
+                            Gradient 2
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient2</span>
+                            </div>
+                        </div>
+                        <div class="gradient3 full">
+                            Gradient 3
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient3</span>
+                            </div>
+                        </div>
+                        <div class="gradient4 full">
+                            Gradient 4
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient4</span>
+                            </div>
+                        </div>
+                        <div class="gradient5 full">
+                            Gradient 5
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient5</span>
+                            </div>
+                        </div>
+                        <div class="gradient6 full">
+                            Gradient 6
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient6</span>
+                            </div>
+                        </div>
+                        <div class="gradient7 full">
+                            Gradient 7
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient7</span>
+                            </div>
+                        </div>
+                        <div class="gradient8 full">
+                            Gradient 8
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient8</span>
+                            </div>
+                        </div>
+                        <div class="gradient9 full">
+                            Gradient 9
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient9</span>
+                            </div>
+                        </div>
+                        <div class="gradient10 full">
+                            Gradient 10
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient10</span>
+                            </div>
+                        </div>
+                        <div class="gradient11 full">
+                            Gradient 11
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient11</span>
+                            </div>
+                        </div>
+                        <div class="gradient12 full">
+                            Gradient 12
+                            <div class="code f16px rounded bg-white black">
+                                &middot;<span class="gradient-dashboard">gradient12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="black">
+                        The code for the gradient is:
+                        <p>gradient + {number}<br>e.g.: gradient1<br>this is a class, so need to passed<br>in class="" from element.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr class="white" style="border-width: 8px; border-style: solid;">
+            <br>
+            <div id="spoilers">
                 <div class="spaced">
                     <h2 id="spoiler">Spoiler</h2>
                     <div class="black bold">
@@ -153,31 +211,92 @@
                         <img src="https://i.pinimg.com/originals/59/0f/a3/590fa3499510fa61db4cb4487d7a27a5.png" width="64px" height="64px" class="spoiler1" alt="Spoiler 1" title="Spoiler 1">
                         <img src="https://i.pinimg.com/originals/59/0f/a3/590fa3499510fa61db4cb4487d7a27a5.png" width="64px" height="64px" class="spoiler2" alt="Spoiler 2" title="Spoiler 2">
                     </div>
+                    <div class="black">
+                        To put the spoiler in active you need to create a element<br>
+                        like "span" and use "spoiler1" or "spoiler2", the spoiler<br>
+                        can be used in 2 cases:
+                        &middot; Text Elements;
+                        &middot; Images Elements.
+                    </div>
                 </div>
             </div>
             <br>
             <hr class="white" style="border-width: 8px; border-style: solid;">
             <br>
-            <div>
+            <div id="icons">
+                <div class="spaced">
+                    <h2 id="icons">Icons</h2>
+                    <div class="black">
+                        <div>
+                            <h4>Discord</h4>
+                                <span class="discord black">Black Discord Icon</span>
+                                <span class="discord white">White Discord Icon</span><span class="discord"></span>
+                                <span class="discord legacy">Legacy Discord Icon</span>
+                        </div>
+                        <div>
+                            <h4>Links</h4>
+                            <span class="ui-icon link1">Link Style 1(In)</span>
+                            <span class="ui-icon link1 out">Link Style 1(Out)</span>
+                            <span class="ui-icon link2">Link Style 2</span>
+                        </div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <span class="ui-icon github">GitHub Icon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr class="white" style="border-width: 8px; border-style: solid;">
+            <br>
+            <div id="source">
+                <script>
+                    function CopyCSS(){
+                        var copyText = document.getElementById("css-source");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        navigator.clipboard.writeText(copyText.value);
+                    }
+                    function CopyJS(){
+                        var copyText = document.getElementById("js-source");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        navigator.clipboard.writeText(copyText.value);
+                    }
+                </script>
                 <div class="spaced">
                     <h2 id="Source">Source</h2>
                     <button class="button link rounded" onclick="SeeCSS()">See CSS</button>
                     <button class="button link rounded" onclick="SeeJS()">See JS</button>
                     <span class="italic red" style="font-size: 12px;">Can be outdated</span>
+                    <br><br><br>
+                    <span class="black">
+                        CSS: <input id="css-source" type="url" style="min-width: 20em; max-width: 100%; width: 42%;" value="https://mrjuaumbr.github.io/StylingSomething.github.io/data/styling.css" disabled>
+                        <button class="button link rounded f8px" onclick="CopyCSS()">Copy CSS Url</button>
+                    </span>
+                    <br>
+                    <span class="black">
+                        JS: <input id="js-source" type="url" style="min-width: 20em; max-width: 100%; width: 42%;" value="https://mrjuaumbr.github.io/StylingSomething.github.io/data/script.js" disabled>
+                        <button class="button link rounded f8px" onclick="CopyJS()">Copy JS Url</button>
+                    </span>
                 </div>
             </div>
             <br>
             <hr class="white" style="border-width: 8px; border-style: solid;">
             <br>
-            <div>
-                <div class="spaced">
+            <div id="testing">
+                <div class="spaced black">
                     <h2 id="testing">Testing</h2>
-                    <button class="button discord black">may have a discord icon before</button>
-                    <img src="data/images/resizing.js?url=data/images/discord_black.png&width=248&height=248" alt="may have a discord icon before">
+                    <span>This area is designed for testing widgets</span>
+                    <div>
+
+                    </div>
+                    <br>
                 </div>
             </div>
+            <br>
         </div>
-        <div onload="GenerateBackground()" class="flex" id="background"></div>
+        <div onload="GenerateBackground()" class="flex" id="background" style="max-width: 100%;"></div>
     </body>
     <script src="data/script.js"></script>
 </html>

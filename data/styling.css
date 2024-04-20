@@ -1,12 +1,22 @@
 :root{
+    /* White */
+    --mint-cream: #F0F7F4;
+    --platinum: #E0E4E1;
+    --timberwolf: #D0D1CD;
+    --white: #fff;
     /* Black */
     --eerie-black: #262626ff;
     --jet: #333333ff;
     --davys-gray: #5e5e5eff;
+    --black: #000;
     /* Blue */
     --neon-blue: #5c6affff;
     --jordy-blue: #a3c1f7ff;
     --alice-blue: #e8f1ffff;
+
+    --blue-munseli: #528590;
+    --robin-egg-blue: #62C1C8;
+    --electric-blue: #72FDFF;
     /* Red */
     --plum-web: #f5b4edff;
     --apricot: #f5cebaff;
@@ -50,55 +60,101 @@
 .gradient2{
     background: rgb(0,0,0);
     background: linear-gradient(var(--plum-web), var(--tea-rose-red));
-    color: #000;
+    color: var(--black);
 }
 
 .gradient3{
     background: rgb(0,0,0);
     background: linear-gradient(var(--neon-blue), var(--jordy-blue), var(--alice-blue));
-    color: #000;
+    color: var(--black);
 }
 
 .gradient4{
     background: rgb(0,0,0);
     background: linear-gradient(var(--plum-web), var(--apricot), var(--tea-rose-red));
-    color: #000;
+    color: var(--black);
 }
 
 .gradient5{
     background: rgb(0,0,0);
     background: linear-gradient(var(--green), var(--erin), var(--screamin-green));
-    color: #000;
+    color: var(--black);
 }
 
 .gradient6{
     background: rgb(0,0,0);
     background: linear-gradient(var(--canary), var(--icterine), var(--icterine-2));
-    color: #000;
+    color: var(--black);
 }
 
 .gradient7{
     background: rgb(0,0,0);
     background: linear-gradient(var(--electric-purple), var(--phlox), var(--heliotrope));
-    color: #fff;
+    color: var(--white);
 }
 .gradient8{
     background: rgb(0,0,0);
     background: linear-gradient(var(--red), var(--imperial-red), var(--bittersweet));
-    color: #fff;
+    color: var(--white);
 }
 .gradient9{
     background: rgb(0,0,0);
     background: linear-gradient(var(--purple-pizzazz), var(--ultra-pink), var(--violet-web-color));
-    color: #fff;
+    color: var(--white);
 }
 .gradient10{
     background: rgb(0,0,0);
     background: linear-gradient(var(--safety-orange), var(--princeton-orange), var(--sandy-brown));
-    color: #fff;
+    color: var(--white);
+}
+
+.gradient11{
+    color: var(--black);
+    background: rgb(0,0,0);
+    background: linear-gradient(var(--timberwolf), var(--platinum), var(--mint-cream));
+}
+
+.gradient12{
+    color: var(--black);
+    background: rgb(0,0,0);
+    background: linear-gradient(var(--blue-munseli), var(--robin-egg-blue), var(--electric-blue));
 }
 
 /* Size */
+
+.f8px{
+    font-size: 8px;
+}
+.f10px{
+    font-size: 10px;
+}
+.f12px{
+    font-size: 12px;
+}
+
+.f14px{
+    font-size: 14px;
+}
+
+.f16px{
+    font-size: 16px;
+}
+
+.f18px{
+    font-size: 18px;
+}
+
+.f20px{
+    font-size: 20px;
+}
+
+.f24px{
+    font-size: 24px;
+}
+
+.f28px{
+    font-size: 28px;
+}
 
 .fullscreen{
     position: absolute;
@@ -164,11 +220,11 @@
 .button.in{
     background: none;
     border: 1px solid #fff;
-    color: #fff;
+    color: var(--white);
 }
 .button.in:hover{
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--black);
 }
 .button.link{
     display: flex;
@@ -188,14 +244,55 @@
     align-items: center;
 }
 
-.discord.black::before{
-    
-    content: url(/data/images/resizing.js?url=&width=248&height=248);
+.discord.black::before{    
+    content: url(https://img.icons8.com/?size=24&id=30888&format=png);
     width: 24px;
     height: 24px;
 }
+.discord.white::before{
+    content: url(https://img.icons8.com/?size=24&id=25627&format=png);
+    width: 24px;
+    height: 24px;
+}
+
 .discord.legacy::before{
-    content: url();
+    content: url(https://img.icons8.com/?size=24&id=30998&format=png);
+    width: 24px;
+    height: 24px;
+}
+.ui-icon{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.ui-icon.github::before{
+    content: url(https://img.icons8.com/?size=24&id=62856&format=png);
+    width: 24px;
+    height: 24px;
+}
+
+
+.ui-icon.link1.out::before,
+.ui-icon.link1::before,
+.ui-icon.link.out::before,
+.ui-icon.link::before{
+    content: url(https://img.icons8.com/?size=24&id=92&format=png);
+    width: 24px;
+    height: 24px;
+}
+
+.ui-icon.link1.out::before,
+.ui-icon.link.out::before{
+    content: url(https://img.icons8.com/ios-filled/24/link--v1.png);
+    width: 24px;
+    height: 24px;
+}
+
+.ui-icon.link2::before{
+    content: url(https://img.icons8.com/?size=24&id=85777&format=png);
+    width: 24px;
+    height: 24px;
 }
 
 /* Carousel */
@@ -311,13 +408,13 @@ main.carousel-load div.item:nth-of-type(5) {
 
 /* Spoiler */
 .spoiler1{
-    background-color: #000;
-    color: #000;
+    background-color: var(--black);
+    color: var(--black);
     cursor: pointer;
     transition: background-color 0.5s;
 }
 .spoiler1:hover{
-    background-color: #fff;
+    background-color: var(--white);
     cursor: auto;
 }
 .spoiler2{
@@ -331,8 +428,8 @@ main.carousel-load div.item:nth-of-type(5) {
     cursor: auto;
 }
 img.spoiler1{
-    background-color: #000;
-    color: #000;
+    background-color: var(--black);
+    color: var(--black);
     cursor: pointer;
     content-visibility: hidden;
     transition: background-color 0.5s, content-visibility 0.15s;
@@ -350,22 +447,22 @@ img.spoiler2{
 /* Misc */
 
 .bg-black{
-    background-color: #000;
+    background-color: var(--black);
 }
 .bg-white{
-    background-color: #fff;
+    background-color: var(--white);
 }
 .black{
-    color: #000;
+    color: var(--black);
 }
 hr.black{
-    border-color: #000;
+    border-color: var(--black);
 }
 .white{
-    color: #fff;
+    color: var(--white);
 }
 hr.white{
-    border-color: #fff;
+    border-color: var(--white);
 }
 .green{
     color: green;
